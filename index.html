@@ -34,7 +34,7 @@
         .feature-card { transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
     </style>
 </head>
-<body class="font-sans bg-navy-900 text-offwhite antialiased" x-data="{ mobileMenuOpen: false }">
+<body class="font-sans bg-offwhite text-navy-900 antialiased" x-data="{ mobileMenuOpen: false }">
 
     <header class="sticky top-0 z-50 bg-navy-900 border-b border-gold/15 py-4 md:py-5">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center">
@@ -42,7 +42,7 @@
                 <img src="TimeVerze.png" alt="TimeVerze" class="h-12 md:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105" onerror="this.style.display='none';">
             </a>
             
-            <nav class="hidden md:flex items-center gap-10">
+             <nav class="hidden md:flex items-center gap-10">
                 <a href="#features" class="text-[13px] uppercase tracking-wider font-bold text-slate-400 hover:text-gold transition-colors">Features</a>
                 <a href="#about" class="text-[13px] uppercase tracking-wider font-bold text-slate-400 hover:text-gold transition-colors">About Us</a>
                 <a href="#how-it-works" class="text-[13px] uppercase tracking-wider font-bold text-slate-400 hover:text-gold transition-colors">How it Works</a>
@@ -72,14 +72,14 @@
         </div>
     </header>
 
-    <section class="relative pt-12 md:pt-24 pb-20 md:pb-32 overflow-hidden bg-navy-800">
+    <section class="relative pt-12 md:pt-24 pb-20 md:pb-32 overflow-hidden bg-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-12 md:gap-20 items-center relative">
             <div class="text-center lg:text-left">
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/20 mb-6">
                     <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
                     <span class="text-[10px] md:text-[11px] font-bold uppercase tracking-widest text-gold-600">Time Management 2.0</span>
                 </div>
-                <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold text-offwhite leading-[1.1] mb-6 md:mb-8 tracking-tight">
+                <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold text-navy-900 leading-[1.1] mb-6 md:mb-8 tracking-tight">
                     Your Complete <span class="text-gold">Ecosystem</span> of Time.
                 </h1>
 
@@ -87,10 +87,10 @@
                     All‑in‑one legal time, billing, and matter management. Capture every billable minute and scale with confidence.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-                    <button class="bg-gold-600 text-navy-900 px-8 py-4 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-navy-900 hover:text-white transition-all shadow-lg shadow-gold/20">
+                    <button class="bg-gold text-navy-900 px-8 py-4 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-navy-900 hover:text-white transition-all shadow-lg shadow-gold/20">
                         Request a Demo
                     </button>
-                    <button class="border-2 border-navy-900 text-offwhite px-8 py-4 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-navy-900 hover:text-white transition-all">
+                    <button class="border-2 border-navy-900 text-navy-900 px-8 py-4 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-navy-900 hover:text-white transition-all">
                         How it Works
                     </button>
                 </div>
@@ -108,21 +108,20 @@
         </div>
 
         <div class="flex-1 bg-navy-800 overflow-hidden">
-             <video controls>
-                <source src="ToggleTrack.mp4" type="video/mp4" poster="TimeVerze.png">
-                Your browser does not support the video tag.
-             </video>
+             <img src="https://image.shutterstock.com/image-illustration/background-image-futuristic-user-interface-260nw-512340523.jpg" 
+                  alt="TimeVerze Dashboard" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
         </div>
     </div>
 </div>
         </div>
     </section>
 
-    <section id="features" x-data="{ modalOpen: false }" class="py-24 bg-navy-900">
+    <section id="features" x-data="{ modalOpen: false }" class="py-24 bg-offwhite">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="text-center mb-16">
             <span class="text-gold font-bold uppercase tracking-[.2em] text-xs">Innovation ¬ Features</span>
-            <h2 class="text-4xl font-extrabold text-offwhite mt-4 mb-4">Core Capabilities</h2>
+            <h2 class="text-4xl font-extrabold text-navy-900 mt-4 mb-4">Core Capabilities</h2>
             <div class="h-1.5 w-12 bg-gold mx-auto"></div>
         </div>
 
@@ -168,7 +167,7 @@
         </div>
 
         <div class="mt-16 text-center">
-            <button @click="modalOpen = true; document.body.style.overflow = 'hidden'" class="inline-flex items-center gap-2 text-offwhite font-bold text-sm uppercase tracking-widest border-b-2 border-gold pb-1 hover:text-gold transition-all group">
+            <button @click="modalOpen = true; document.body.style.overflow = 'hidden'" class="inline-flex items-center gap-2 text-navy-900 font-bold text-sm uppercase tracking-widest border-b-2 border-gold pb-1 hover:text-gold transition-all group">
                 Explore Full Ecosystem
                 <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </button>
@@ -340,12 +339,12 @@
     </div>
 </section>
 
-<section id="how-it-works" class="py-24 bg-navy-800">
+<section id="how-it-works" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
         
         <div class="text-center mb-16">
             <span class="text-gold font-bold uppercase tracking-[.2em] text-xs">The Process ¬ How it works</span>
-            <h2 class="text-4xl font-extrabold text-offwhite mt-4">Four steps to precision</h2>
+            <h2 class="text-4xl font-extrabold text-navy-900 mt-4">Four steps to precision</h2>
             <p class="text-slate-500 mt-4 max-w-xl mx-auto font-medium">Here is the path to better management.</p>
         </div>
 
@@ -353,36 +352,36 @@
             
             <div class="relative group">
                 <div class="mb-8 flex items-center">
-                    <div class="w-12 h-12 bg-offwhite text-gold flex items-center justify-center font-black text-xl rounded-sm z-10 shadow-xl group-hover:bg-gold group-hover:text-navy-900 transition-colors duration-300">01</div>
+                    <div class="w-12 h-12 bg-navy-900 text-gold flex items-center justify-center font-black text-xl rounded-sm z-10 shadow-xl group-hover:bg-gold group-hover:text-navy-900 transition-colors duration-300">01</div>
                     <div class="hidden lg:block absolute left-12 w-full h-0.5 bg-slate-100 -z-0"></div>
                 </div>
-                <h3 class="text-xl font-bold text-offwhite mb-3">Onboard</h3>
+                <h3 class="text-xl font-bold text-navy-900 mb-3">Onboard</h3>
                 <p class="text-slate-500 text-sm leading-relaxed">Contact us to have your tenant account onboarded.</p>
             </div>
 
             <div class="relative group">
                 <div class="mb-8 flex items-center">
-                    <div class="w-12 h-12 bg-offwhite text-gold flex items-center justify-center font-black text-xl rounded-sm z-10 shadow-xl group-hover:bg-gold group-hover:text-navy-900 transition-colors duration-300">02</div>
+                    <div class="w-12 h-12 bg-navy-900 text-gold flex items-center justify-center font-black text-xl rounded-sm z-10 shadow-xl group-hover:bg-gold group-hover:text-navy-900 transition-colors duration-300">02</div>
                     <div class="hidden lg:block absolute left-12 w-full h-0.5 bg-slate-100 -z-0"></div>
                 </div>
-                <h3 class="text-xl font-bold text-offwhite mb-3">Configure</h3>
+                <h3 class="text-xl font-bold text-navy-900 mb-3">Configure</h3>
                 <p class="text-slate-500 text-sm leading-relaxed">Set roles, clients, and attorney rates.</p>
             </div>
 
             <div class="relative group">
                 <div class="mb-8 flex items-center">
-                    <div class="w-12 h-12 bg-offwhite text-gold flex items-center justify-center font-black text-xl rounded-sm z-10 shadow-xl group-hover:bg-gold group-hover:text-navy-900 transition-colors duration-300">03</div>
+                    <div class="w-12 h-12 bg-navy-900 text-gold flex items-center justify-center font-black text-xl rounded-sm z-10 shadow-xl group-hover:bg-gold group-hover:text-navy-900 transition-colors duration-300">03</div>
                     <div class="hidden lg:block absolute left-12 w-full h-0.5 bg-slate-100 -z-0"></div>
                 </div>
-                <h3 class="text-xl font-bold text-offwhite mb-3">Train</h3>
+                <h3 class="text-xl font-bold text-navy-900 mb-3">Train</h3>
                 <p class="text-slate-500 text-sm leading-relaxed">Guided onboarding so your team bills from day one.</p>
             </div>
 
             <div class="relative group">
                 <div class="mb-8 flex items-center">
-                    <div class="w-12 h-12 bg-offwhite text-gold flex items-center justify-center font-black text-xl rounded-sm z-10 shadow-xl group-hover:bg-gold group-hover:text-navy-900 transition-colors duration-300">04</div>
+                    <div class="w-12 h-12 bg-navy-900 text-gold flex items-center justify-center font-black text-xl rounded-sm z-10 shadow-xl group-hover:bg-gold group-hover:text-navy-900 transition-colors duration-300">04</div>
                 </div>
-                <h3 class="text-xl font-bold text-offwhite mb-3">Measure</h3>
+                <h3 class="text-xl font-bold text-navy-900 mb-3">Measure</h3>
                 <p class="text-slate-500 text-sm leading-relaxed">Track utilization and collections in real time.</p>
             </div>
 
@@ -461,18 +460,18 @@
     </div>
 </section>
 
-<section id="trust" class="py-24 bg-navy-900">
+<section id="trust" class="py-24 bg-offwhite">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="text-center mb-16">
           <span class="text-gold font-bold uppercase tracking-[.2em] text-xs">Trust</span>
-            <h2 class="text-4xl font-extrabold text-offwhite mt-4">The TimeVerze Advantage</h2>
+            <h2 class="text-4xl font-extrabold text-navy-900 mt-4">The TimeVerze Advantage</h2>
                     <div class="h-1 w-12 bg-gold mx-auto mt-6"></div>
 
         </div>
         
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="p-8 bg-offwhite border border-slate-200 rounded-sm hover:border-gold transition-colors">
+            <div class="p-8 bg-white border border-slate-200 rounded-sm hover:border-gold transition-colors">
                 <div class="w-12 h-12 bg-gold/10 text-gold rounded-lg flex items-center justify-center mb-6">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                 </div>
@@ -484,7 +483,7 @@
                 </p>
             </div>
 
-            <div class="p-8 bg-offwhite border border-slate-200 rounded-sm hover:border-gold transition-colors">
+            <div class="p-8 bg-white border border-slate-200 rounded-sm hover:border-gold transition-colors">
                 <div class="w-12 h-12 bg-gold/10 text-gold rounded-lg flex items-center justify-center mb-6">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                 </div>
@@ -496,7 +495,7 @@
                 </p>
             </div>
 
-             <div class="p-8 bg-offwhite border border-slate-200 rounded-sm hover:border-gold transition-colors">
+             <div class="p-8 bg-white border border-slate-200 rounded-sm hover:border-gold transition-colors">
                 <div class="w-12 h-12 bg-gold/10 text-gold rounded-lg flex items-center justify-center mb-6">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                 </div>
@@ -507,7 +506,7 @@
                     Download for compliance and audits.</p>
             </div>
 
-            <div class="p-8 bg-offwhite border border-slate-200 rounded-sm hover:border-gold transition-colors">
+            <div class="p-8 bg-white border border-slate-200 rounded-sm hover:border-gold transition-colors">
                 <div class="w-12 h-12 bg-gold/10 text-gold rounded-lg flex items-center justify-center mb-6">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                 </div>
@@ -523,11 +522,11 @@
     </div>
 </section>
 
-<section id="faq" class="py-24 bg-navy-800">
+<section id="faq" class="py-24 bg-offwhite">
     <div class="max-w-4xl mx-auto px-6 lg:px-8">
         <div class="text-center mb-16">
             <span class="text-gold font-bold uppercase tracking-[.2em] text-xs">Support</span>
-            <h2 class="text-4xl font-extrabold text-offwhite mt-4 tracking-tight">Frequently Asked Questions</h2>
+            <h2 class="text-4xl font-extrabold text-navy-900 mt-4 tracking-tight">Frequently Asked Questions</h2>
             <div class="h-1 w-12 bg-gold mx-auto mt-6"></div>
         </div>
 
@@ -607,7 +606,7 @@
 
         <div class="mt-12 text-center">
             <p class="text-slate-500 font-medium mb-4">Still have questions?</p>
-            <a href="mailto:infor@timverze.co.zm" class="text-offwhite font-bold border-b-2 border-gold hover:text-gold transition-all pb-1">
+            <a href="mailto:infor@timverze.co.zm" class="text-navy-900 font-bold border-b-2 border-gold hover:text-gold transition-all pb-1">
                 Contact our support team
             </a>
         </div>
@@ -640,7 +639,8 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                 <div class="col-span-1 md:col-span-1">
                     <a href="#" class="flex items-center gap-3 mb-6">
-                        <img src="TimeVerze.png" alt="TimeVerze" class="h-20 w-auto">
+                        <img src="https://timeverze.co.zm/images/timeverze-logo.png" alt="TimeVerze" class="h-10 w-auto">
+                        <span class="font-brand font-extrabold text-white text-lg tracking-[0.15em]">TIMEVERZE</span>
                     </a>
                     <p class="text-slate-400 text-sm leading-relaxed mb-8">
                         Capture every billable minute, invoice accurately, and scale with confidence.
@@ -685,7 +685,7 @@
 
             <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
                 <p class="text-slate-500 text-xs">© 2026 TimeVerze. All rights reserved.</p>
-                <p class="text-slate-500 text-xs">Designed for Excellence ¬ Zambezi Digital Solution Limited.</p>
+                <p class="text-slate-500 text-xs">Designed for Excellence ¬ Zambezi Digital Solutions Limited.</p>
             </div>
         </div>
     </footer>
@@ -706,3 +706,4 @@
 
 </body>
 </html>
+
